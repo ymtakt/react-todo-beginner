@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #636363;
+}
+
+label {
+  display: block;
+  font-size: 15px;
+}
+
+input {
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #333;
+  outline: none;
+  border: 2px solid #868283;
+}
+
+input[type="date"] {
+  width: calc(100% - 34px);
+  padding-top: 9px;
+  padding-bottom: 9px;
+  cursor: pointer;
+}
+
+select {
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 18px;
+  color: #333;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid #868283;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.App {
+  height: 100%;
+  min-height: 100vh;
+  padding: 24px 0 0;
+  background-color: #f6faff;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 32px;
+  margin: 0 auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 24px rgba(206, 244, 255, .7);
+  box-shadow: 0px 0px 24px rgba(206, 244, 255, .7);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex__between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex__end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+/*入力画面*/
+.input-todo {
+  margin-bottom: 24px;
+}
+
+.input-todo .input-todo__text {
+  display: block;
+  width: calc(100% - 34px);
+  margin-bottom: 24px;
+}
+
+.input-todo .input-todo__half {
+  display: inline-block;
+  width: 47%;
+}
+
+
+.input-todo .input-todo__btn {
+  display: block;
+  width: calc(30% - 30px);
+  padding: 12px;
+  margin-left: auto;
+  margin-bottom: 24px;
+  color: #fff;
+  background: #52a4d0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/*タスク一覧、編集画面*/
+.scheduled-task {
+  padding: 32px;
+  margin-bottom: 24px;
+  background-color: #ebebeb;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.scheduled-task ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.scheduled-task ul li {
+  padding: 16px;
+  background-color: #fff;
+  margin-bottom: 14px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.scheduled-task button {
+  display: block;
+  width: calc(30% - 30px);
+  padding: 6px;
+  margin-left: 16px;
+  color: #fff;
+  background: #7c7c7c;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.scheduled-task .scheduled-task__priority {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.scheduled-task .scheduled-task__priority span {
+  font-size: 13px;
+  padding: 4px 6px;
+  color: #fff;
+  background-color: #d09752;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.scheduled-task .scheduled-task__complete {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 24px;
+}
+
+.scheduled-task .scheduled-task__complete span {
+  font-size: 13px;
+  padding: 4px 6px;
+  color: #fff;
+  background-color: #d09752;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.scheduled-task .scheduled-task__text {
+  display: block;
+  width: calc(100% - 34px);
+  padding: 10px 0;
+  margin-bottom: 24px;
+  outline: none;
+  border: none;
+}
+
+/*完了リスト*/
+.complete-tast {
+  padding: 32px;
+  background-color: #ebebeb;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.complete-tast ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.complete-tast ul li {
+  padding: 8px 14px;
+  background-color: #fff;
+  margin-bottom: 8px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.complete-tast p {
+  margin: 0 0 6px;
+}
+
+.complete-tast button {
+  display: block;
+  width: calc(30% - 30px);
+  padding: 6px;
+  margin-left: 16px;
+  color: #fff;
+  background: #7c7c7c;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
